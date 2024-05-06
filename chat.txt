@@ -14,3 +14,4 @@ _hi
 
 hi
 hi
+clear
