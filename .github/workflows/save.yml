@@ -1,0 +1,23 @@
+name: Update Index File
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  update-file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Save Chat File
+      run: |
+        bash chat.sh
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git add index.html
+        git commit -m "Update chat array in index.html"
+        git push
