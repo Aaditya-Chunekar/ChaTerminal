@@ -8,3 +8,5 @@ _hello
 bullya_
 Good
 bad_
+
+python -u "c:\Users\Arjun\OneDrive\Desktop\My Java Program\python.py"
