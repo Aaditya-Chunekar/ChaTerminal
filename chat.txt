@@ -7,3 +7,4 @@ Welcome to Mac Terminal ! |
 /hi
 _hello prasen shinde
 Hello Prasen 
+Hello Aaditya
